@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USERS DATA API</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar__left">
+            <h4>FAKE DATA</h4>
+        </div>
+        <div class="navbar__right">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./docs.html">Docs</a></li>
+                <li><a href="https://github.com/ashu63/fake-data-api" target="_blank">Github</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="body__left">
+            <h1>Fake Users Data API</h1>
+            <p>Free fake API for testing and prototyping.</p>
+            <div class="body__leftButtons">
+                <button> <a href="https://github.com/ashu63/fake-data-api"> View on Github </a><i class="fa fa-github" aria-hidden="true"></i>
+                </button>
+                <button id="second__button"> <a href="./docs.html"> Read docs</a> <i class="fa fa-book" aria-hidden="true"></i>
+                </button>
+                <div class="body__leftBottom">
+                    <p>Fake Data API it's a collection of completely free APIs that helps web developers and web designers generate fake data in a fast and easy way. No registration is required. No tokens, no authentication.</p>
+                </div>
+            </div>
+        </div>
+        <div class="body__right">
+            <img src="images/124.png" alt="">
+
+        </div>
+
+    </div>
+    <div class="second__page">
+        <h3>Get tired of Lorem ipsum data?!
+            Didn't you find any free Users API?!</h3>
+            <p>fakeStoreApi is a free online REST API that you can use whenever you need Pseudo-real data for your app and website without running any server-side code. It's awesome for teaching purposes, sample codes, tests, etc.</p>
+            <div class="second__pageBottom">
+                <h2>When to use</h2>
+                <p>Users API is a free online REST API that you can use whenever you need some fake data. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to test things locally.</p>
+            </div>
+    </div>
+    <div class="api__example">
+        <h2>try It</h2>
+        <p>Run this code here, in a console or from any site:</p>
+        <h4>Example Code</h4>
+        <div class="api__exampleBox">
+            <p> <span>fetch</span> <span id="green"> ('https://jsonplaceholder.typicode.com/todos/1')</span>
+               <span> .then</span>(response => response.json())
+               <span> .then</span>(json => console.log(json))</p>
+        </div>
+        <button>TRY IT</button>
+<div class="api__example__afterButton">
+    <h3>Get user</h3>
+    <p>If you want to simulate a detail request for a single user you can create another endpoint in the form above. Or just use the one we have provided below.</p>
+    <div class="api__example__nextContainer">
+        <p>curl https://api.mocki.io/v1/ce5f60e2</p>
+    </div>
+    <p>Response</p>
+    <div class="api__example__nextContainer api__example__nextContainer__two">
+        <p>{ <span class="next"></span>
+           <span> "_id" </span> : "6016ea03bdd2153768b89d3f",
+           <span> "name" </span> : "Tracey", <span class="next"></span>
+           <span>  "email" </span>: "tdermotb@virginia.edu",
+           <span>  "phone" </span>: "944-346-2614", <span class="next"></span>
+           <span> "address" </span> : "49126 Farragut Street",
+           <span> "age" </span> : 12, <span class="next"></span>
+           <span>"__v" </span> : 0 <span class="next"></span>
+        }</p>
+    </div>
+</div>
+   
+    </div>
+    <div class="resources">
+        <h2>Resources</h2>
+        <p>FAKE DATA API comes with a set of 3 common resources:</p>
+        <div class="resources__data">
+            <div class="resources__dataLeft">
+                <a href="">/users</a>
+                <a href="">/comments</a>
+                <a href="">/todos</a>
+            </div>
+            <div class="resources__dataRight">
+                <p>100 posts</p>
+                <p>40 posts</p>
+                <p>30 posts</p>
+            </div>
+        </div>
+        <button id="moreOnDocs"> <a href="./docs.html"> More on docs </a></button>
+    </div>
+    <div class="routes">
+        <div class="routes__title">
+            <h2>Routes</h2>
+            <p>All HTTP methods are supported. You can use http or https for your requests.</p>
+        </div>
+        <div class="routes__center">
+            <div class="routes__centerLeft">
+                <p>GET</p>
+                <p>GET</p>
+                <p>GET</p>
+                <p>POST</p>
+                <p>DELETE</p>
+                <p>PUT</p>
+            </div>
+            <div class="routes__centerRight">
+                <a href="">/users</a>
+                <a href="">/comments</a>
+                <a href="">/todos</a>
+                <p>/users</p>
+                <p>/users</p>
+                <p>/users</p>
+            </div>
+        </div>
+   
+    </div>
+    <div class="conclusion">
+        <h2>Conclusion</h2>
+        <p>So lets draw some conclusions from this! A normal use case for faking an API is when frontend developers might start working without a proper backend present. In that case the frontend developers are interested in one URL which reflects the backend. It would be very hard to use one URL for each endpoint. Therefor it’s more convenient to use a tool like Mocki where you can easily structure and create an entire fake JSON API.</p>
+        <p>Another important aspect of faking an API is to use a real webserver. You could for example go ahead and create a local JSON file, store all you data in the file and the read that data on startup. You would have the data in memory and could use it. But it would not properly reflect a mocked HTTP server. You have to decide if you just want to fake the data or fake the entire request. We recommend mocking the entire request as that is more likely to reflect a live production API.</p>
+    </div>
+    <div class="footer">
+        <p> <span id="footer__span"> Made with  </span>  <span> ♥</span> by Sawan Kumar</p>
+        <p id="last"><i class="fa fa-coffee" aria-hidden="true"></i>
+Buy me a cofee        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENTATION</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar__left">
+            <h4>FAKE DATA</h4>
+        </div>
+        <div class="navbar__right">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./docs.html">Docs</a></li>
+                <li><a href="https://github.com/ashu63/fake-data-api" target="_blank">Github</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="docs__first">
+
+
+    <div class="docs__heading">
+        <h1>Documentation</h1>
+    </div>
+    <div class="how__use">
+        <h2>How to use it</h2>
+        <p>Fake Users API can be used with any type of  project that needs todos, comments and users in JSON format. you can use examples below to check how Fake Users API  works and feel free to enjoy it in your awesome projects!</p>
+    </div>
+    <div class="guide">
+        <h1>Guide</h1>
+        <p>You can copy paste the code in your browser console to quickly test Fake Users API.</p>
+    </div>
+    <div class="docs__data">
+        <h1>Data</h1>
+        <div class="docs__data__allData">
+            <h2>Get all Users</h2>
+        </div>
+        <div class="docs__dataContainerExample">
+            <p>fetch( <span class="docs__color">
+
+            'https://fakestoreapi.com/products'  </span>) <span class="break"></span>
+                .then(res=>res.json()) <span class="break"></span>
+                .then(json=>console.log(json))</p>
+        </div>
+        <div class="docs__dataContainerExample__response">
+            <h4>Response</h4>
+            <div class="docs__dataContainerExample docs__dataContainerExample__two">
+                <p>[ <span class="break"></span> { <span class="break"></span>"_id":"6016e1c88a94c636804496b3",<span class="break"></span>"name":"Meaghan",<span class="break"></span>"email":"mhavvock1e@usnews.com",<span class="break"></span>"phone":"137-251-1505", <span class="break"></span>"address":"4 Burrows Circle", <span class="break"></span>"age":51, <span class="break"></span>"__v":0 <span class="break"></span>}, <span class="break"></span>
+                <p> <span class="break"></span> { <span class="break"></span>"_id":"6016db2dff7ed338c8aff103",<span class="break"></span>"name":"Sawan Mehra",<span class="break"></span>"email":"ak23@gmail.com",<span class="break"></span>"phone":"231-111-0988", <span class="break"></span>"address":"12 Gate talwara", <span class="break"></span>"age":21, <span class="break"></span>"__v":0 <span class="break"></span>}, <span class="break"></span>.... <span class="break"></span>]
+                
+                </p>
+            </div>
+            <div class="docs__singleUser">
+                <h2>Get a single User</h2>
+                <div class="docs__dataContainerExample">
+                    <p>fetch( <span class="docs__color">
+        
+                    'https://fakestoreapi.com/products'  </span>) <span class="break"></span>
+                        .then(res=>res.json()) <span class="break"></span>
+                        .then(json=>console.log(json))</p>
+                </div>
+                <div class="docs__dataContainerExample__response">
+                    <h4>Response</h4>
+                    <div class="docs__dataContainerExample docs__dataContainerExample__three">
+                        <p>[ <span class="break"></span> { <span class="break"></span>"_id":"6016e1c88a94c636804496b3",<span class="break"></span>"name":"Meaghan",<span class="break"></span>"email":"mhavvock1e@usnews.com",<span class="break"></span>"phone":"137-251-1505", <span class="break"></span>"address":"4 Burrows Circle", <span class="break"></span>"age":51, <span class="break"></span>"__v":0 <span class="break"></span>} <span class="break"></span>]
+                        
+                        </p>
+                    </div>
+            </div>
+        </div>
+        <div class="docs__createUser">
+            <h2>Creating a User</h2>
+            <div class="docs__dataContainerExample docs__dataContainerExample__four">
+                <p>fetch('https://jsonplaceholder.typicode.com/posts', <span class="break"></span> {
+                    method: 'POST',  <span class="break"></span>
+                    body: JSON.stringify({  <span class="break"></span>
+                      name: 'foo',  <span class="break"></span>
+                      email: 'mhavvock1e@usnews.com',  <span class="break"></span>
+                      phone: 137-251-1505,  <span class="break"></span>
+                      address: 4 Burrows Circle,  <span class="break"></span>
+                      age: 51,  <span class="break"></span>
+                    }),  <span class="break"></span>
+                    headers: {  <span class="break"></span>
+                      'Content-type': 'application/json; charset=UTF-8',  <span class="break"></span>
+                    },  <span class="break"></span>
+                  })  <span class="break"></span>
+                    .then((response) => response.json())
+                    .then((json) => console.log(json));</p>
+            </div>
+            <div class="docs__dataContainerExample__response">
+                <h4>Response</h4>
+                <div class="docs__dataContainerExample docs__dataContainerExample__five">
+                    <p> <span class="break"></span> { <span class="break"></span>"_id":"6016e1c88a94c636804496b3",<span class="break"></span>"name":"foo",<span class="break"></span>"email":"mhavvock1e@usnews.com",<span class="break"></span>"phone":"137-251-1505", <span class="break"></span>"address":"4 Burrows Circle", <span class="break"></span>"age":51, <span class="break"></span>"__v":0 <span class="break"></span>} <span class="break"></span>
+                    
+                    </p>
+                </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="docs__last">
+        <p>Similar process for /comments and /todos</p>
+    </div>
+</div>
+<div class="footer">
+    <p> <span id="footer__span"> Made with  </span>  <span> ♥</span> by Sawan Kumar</p>
+    <p id="last"><i class="fa fa-coffee" aria-hidden="true"></i>
+Buy me a cofee        </p>
+</div>
+</body>
+</html>
