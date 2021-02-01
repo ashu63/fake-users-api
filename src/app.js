@@ -6,7 +6,7 @@ const path = require("path")
 require('./db/conn');
 
 const PeopleData = require('./models/peopleData')
-const TodoData = require('./models/TodoData')
+const TodoData = require('./models/todoData')
 const CommentData = require('./models/commentsData')
 
 const static_files = path.join(__dirname, "../public")
